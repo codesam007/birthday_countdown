@@ -73,7 +73,7 @@ module.exports = webpackMerge(webpackCommon, {
 
   devServer: {
     host: env.devServer.host || 'localhost',
-    port: env.devServer.port || 3000,
+    port: env.devServer.port || 8080,
     contentBase: path.resolve(__dirname, '../static'),
     watchContentBase: true,
     compress: true,
@@ -88,7 +88,8 @@ module.exports = webpackMerge(webpackCommon, {
       warnings: true,
       errors: true
     },
-    proxy: proxyRules
+    proxy: proxyRules,
+    allowedHosts: env.devServer.allowedHosts || []
   }
 
 });
