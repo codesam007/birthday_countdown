@@ -20,7 +20,7 @@ export default class App extends Component {
       return[
         <Clock/>,
         ChangeDate('Change Date', () => this.setState({ active: false })),
-        LargeText('04/03'),
+        LargeText('02/11'),
         <label className="grid_remaining">Remaining until your 15th birthday</label>
       ];
     } else {
@@ -36,7 +36,6 @@ export default class App extends Component {
       <div className="grid">
       <h1 className="grid_title">Birthday Countdown</h1>
       
-        <div className="grid_skew-dark-one-box"></div>
         <div className="grid_skew-dark-two"></div>
         <div className="grid_skew-dark-three"></div>
         
