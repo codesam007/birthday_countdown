@@ -23,7 +23,7 @@ export default class App extends Component {
         minutes: 0,
         seconds: 0
       },
-      age: 15
+      age: 0
     };
 
     this.handleGenerate = this.handleGenerate.bind(this);
